@@ -7,6 +7,8 @@
 [![Claude AI](https://img.shields.io/badge/Claude-Powered-orange)](https://claude.ai)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+https://github.com/user-attachments/assets/2d91ccc4-f018-494f-8e1c-f4358041362d
+
 ## ✨ What Makes This Special
 
 🎯 **Natural Language Intelligence**: Say "remind me to review the quarterly report next Tuesday, it's high priority" and get a properly filed task with due date, priority, and labels.
