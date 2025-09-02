@@ -1,0 +1,14 @@
+{
+  "name": "voice-to-todoist",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Raycast Script Command: Capture a voice note via SuperWhisper and create a smart Todoist task with Claude.",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "install:raycast": "mkdir -p \"$HOME/Documents/Raycast Scripts\" && ln -sf \"$PWD/tools/voice-note-raycast.js\" \"$HOME/Documents/Raycast Scripts/voice-to-todoist.js\" && echo 'Linked voice-to-todoist.js into Raycast Scripts.'"
+  },
+  "keywords": ["raycast","script-commands","todoist","voice","superwhisper","anthropic","claude"],
+  "author": "Jack Arturo"
+}

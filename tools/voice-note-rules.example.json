@@ -1,0 +1,19 @@
+{
+  "rules": [
+    {
+      "test": "(?i)(bill|billing|invoice)",
+      "projectName": "Work",
+      "sectionName": "Upcoming bills",
+      "labels": ["finance"],
+      "priority": 3
+    },
+    {
+      "test": "(?i)(hubspot|wp\s*fusion)",
+      "projectName": "Work",
+      "sectionName": "WP Fusion",
+      "labels": ["client", "hubspot"],
+      "priority": 3
+    }
+  ]
+}
+
