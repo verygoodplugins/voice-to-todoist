@@ -7,7 +7,11 @@
   "type": "module",
   "engines": { "node": ">=18" },
   "scripts": {
-    "install:raycast": "mkdir -p \"$HOME/Documents/Raycast Scripts\" && ln -sf \"$PWD/tools/voice-note-raycast.js\" \"$HOME/Documents/Raycast Scripts/voice-to-todoist.js\" && echo 'Linked voice-to-todoist.js into Raycast Scripts.'"
+    "install:raycast": "mkdir -p \"$HOME/Documents/Raycast Scripts\" && ln -sf \"$PWD/tools/voice-note-raycast.js\" \"$HOME/Documents/Raycast Scripts/voice-to-todoist.js\" && echo 'Linked voice-to-todoist.js into Raycast Scripts.'",
+    "dev": "npm --prefix extension run dev",
+    "build": "npm --prefix extension run build",
+    "lint": "npm --prefix extension run lint",
+    "publish": "npm --prefix extension run publish"
   },
   "keywords": ["raycast","script-commands","todoist","voice","superwhisper","anthropic","claude"],
   "author": "Jack Arturo"

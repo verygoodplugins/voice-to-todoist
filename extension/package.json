@@ -1,0 +1,56 @@
+{
+  "name": "voice-to-todoist",
+  "title": "Voice to Todoist",
+  "description": "Capture a voice note via SuperWhisper and create a smart Todoist task with Claude.",
+  "version": "0.1.0",
+  "author": "verygoodplugins",
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "categories": ["Productivity"],
+  "homepage": "https://verygoodplugins.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verygoodplugins/voice-to-todoist.git"
+  },
+  "schemaVersion": 1,
+  "commands": [
+    {
+      "name": "record-voice-task",
+      "title": "Voice to Todoist",
+      "description": "Record with SuperWhisper, parse with Claude, and file a Todoist task",
+      "mode": "silent"
+    },
+    {
+      "name": "edit-rules",
+      "title": "Edit Voice Rules",
+      "description": "Add simple routing rules for project, section, labels",
+      "mode": "view"
+    },
+    {
+      "name": "find-project",
+      "title": "Find Todoist Project",
+      "description": "Search projects, copy ID, and use it in preferences",
+      "mode": "view"
+    }
+  ],
+  "preferences": {
+    "anthropicApiKey": { "type": "secret", "title": "Anthropic API Key", "required": true },
+    "todoistApiToken": { "type": "secret", "title": "Todoist API Token", "required": true },
+    "defaultProjectId": { "type": "string", "title": "Default Project ID (optional)", "required": false },
+    "defaultProjectName": { "type": "string", "title": "Default Project Name (optional)", "required": false },
+    "model": { "type": "string", "title": "Model (optional)", "placeholder": "claude-3-5-haiku-latest", "required": false },
+    "sectionsPrefetch": { "type": "string", "title": "Prefetch Sections (projects)", "default": "6", "required": false },
+    "enableRules": { "type": "checkbox", "title": "Enable Rules (voice-note-rules.json)", "default": true, "required": false }
+  },
+  "scripts": {
+    "dev": "ray dev",
+    "build": "ray build -e dist",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish",
+    "postinstall": "node scripts/create-icon.js || true",
+    "make:icon": "node scripts/create-icon.js"
+  },
+  "dependencies": {
+    "@raycast/api": "latest"
+  }
+}
